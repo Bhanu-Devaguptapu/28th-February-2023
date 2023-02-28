@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int n,arm,r,s,e,temp;
+	scanf("%d %d",&s,&e);
+	for(n=s;n<=e;n++)
+	{
+		temp=n;
+		arm = 0;
+	while(temp!=0)
+	{
+		r=temp%10;
+		temp=temp/10;
+		arm=arm+(r*r*r);
+		}
+	if(arm == n)
+		printf("%d\t",n);
+		}
+		printf("\n");
+}
